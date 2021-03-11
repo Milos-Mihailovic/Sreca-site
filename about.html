@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sreća | O nama</title>
+    <link rel="icon" href="./images/Sreca.png">
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="main-header">
+
+      <nav>
+        <div class="menu-icon">
+          <img id="img-other" src="images/Sreca.png" alt="">
+            <i class="fa fa-bars fa-2x"></i>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li class="current"><a href="about.html">O nama</a></li>
+            <li><a href="services.html">Usluge</a></li>
+            <li><a href="contact.html">Prijava</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- SUBHEADER -->
+    <section id="subheader">
+       <div class="container">
+         <div class="row">
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+             <h1>O nama</h1>
+           </div>
+         </div>
+       </div>
+    </section>
+
+    <!-- MAIN PAGE -->
+    <section id="page" class="about">
+      <div class="container">
+        <div class="row center-xs center-sm center-md center-lg">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-content">
+            <h2><span class="primary-text">Ko</span> smo mi</h2>
+            <p>Kao što smo i napisali na naslovnici sajta, mi smo neprofitna društvena organizacija koja želi da pomogne društvu u boljem i bržem razvoju,
+               da stanemo na put svim preprekama i usmerimo prosperitet i budućnost tamo gde im je i mesto, na uzlaznoj putanji!
+               Ciljna grupa su ljudi i zajednica jer se sve na nama i zasniva. Račun će biti vidljiv svima tako da svi imaju uvid u to da ne zloupotrebljavamo
+               vašu volju i želju da pomognete.
+               Zato vozdra rajo ajde da nešto promenimo! <i class="fab fa-angellist"></i></p>
+            <hr>
+            <h2><span class="primary-text">Šta</span> radimo</h2>
+            <p>Nova smo i mlada organizacija, imamo za cilj da razvijamo projekte, koji će biti za dobrobit zajednice.
+              Da li će to biti kroz humanitarni rad, edukativne programe ili neki drugi način da doprinesemo razvoju društva i pomognemo onima kojima je to potrebno.
+              Kroz konverzaciju sa građanima formiraćemo projekte koji su najpotrebniji,
+              zato je potrebno da pričamo sa Vama kako bi brže i efikasnije ostvarili zajedničke ciljeve! </p>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- COMPANY -->
+      <section id="company">
+        <div class="container">
+          <div class="row center-xs center-sm center-md center-lg company-content">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <h4>Kontaktirajte nas</h4>
+              <ul>
+                <li><i class="fa fa-phone"></i> (+381)62 383829</li>
+                <li><i class="fa fa-envelope"></i> sreca@gmail.com</li>
+                <li><i class="fa fa-map"></i> Jove Ilića 154, 11010 Beograd, Srbija</li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <h4>O nama</h4>
+              <p>Neprofitna društvena organizacija čiji je cilj poboljšanje uslova života i razvoj svesti kod ljudi <i class="fas fa-smile"></i></p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <h4>Budite u toku</h4>
+              <p>Ukoliko želite da Vas informišemo pošaljite nam Vaš e-mail <i class="fas fa-envelope"></i></p>
+              <form>
+                <input type="text" name="email" placeholder="Unesite E-mail">
+                <button type="submit" name="button">Pošalji</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- FOOTER -->
+      <footer id="main-footer">
+        <div class="container">
+          <div class="row center-xs center-sm center-md center-lg">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <p>Copyright &copy; 2018 | Sreća</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script type="text/javascript">
+
+        //Menu button
+
+        $(document).ready(function(){
+          $(".menu-icon").on("click", function(){
+            $("nav ul").toggleClass("showing");
+          });
+        });
+
+        //Scrolling
+
+        $(window).on("scroll", function(){
+          if ($(window).scrollTop()) {
+            $('nav').addClass('black');
+          }
+          else {
+            $('nav').removeClass('black');
+          };
+        });
+
+
+      </script>
+
+
+
+  </body>
+</html>
